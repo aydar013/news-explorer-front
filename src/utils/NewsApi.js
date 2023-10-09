@@ -8,17 +8,6 @@ const weekPriorDateString = new Date(
 ).toLocaleDateString("sv-SE");
 
 const Api = {
-  request: async (url, options = {}) => {
-    const response = await fetch(url, options);
-    if (response.ok) {
-      return await response.json();
-    }
-    const error = new Error(
-      `Error ${response.status}: ${await response.text()}`
-    );
-    throw error;
-  },
-
   search: async ({ input }) => {
     const url = `${BASE_URL}/everything?q=${input}&from=${weekPriorDateString}&to=${currentDateString}&apiKey=${apiKey}&pageSize=100`;
     const options = {

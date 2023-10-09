@@ -1,22 +1,11 @@
-import Api from "./NewsApi";
+import { checkResponse } from "./checkResponse";
 
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://newsexplorer.lozan.com"
+    ? "https://api.newsexplorer.lozan.com"
     : "http://localhost:3001";
 
 const MainApi = {
-  checkResponse: async (res) => {
-    const response = await fetch(res);
-    if (response.ok) {
-      return await response.json();
-    }
-    const error = new Error(
-      `Error ${response.status}: ${await response.text()}`
-    );
-    throw error;
-  },
-
   signIn: async ({ email, password }) => {
     const url = `${baseUrl}/signin`;
     const options = {
@@ -26,7 +15,7 @@ const MainApi = {
       },
       body: JSON.stringify({ email, password }),
     };
-    return await Api.request(url, options);
+    return await checkResponse.request(url, options);
   },
 
   register: async ({ name, email, password }) => {
@@ -38,7 +27,7 @@ const MainApi = {
       },
       body: JSON.stringify({ name, email, password }),
     };
-    return await Api.request(url, options);
+    return await checkResponse.request(url, options);
   },
 
   getUser: async (token) => {
@@ -50,7 +39,7 @@ const MainApi = {
         authorization: `Bearer ${token}`,
       },
     };
-    return await Api.request(url, options);
+    return await checkResponse.request(url, options);
   },
 
   saveArticle: async (
@@ -74,7 +63,7 @@ const MainApi = {
         image,
       }),
     };
-    return await Api.request(url, options);
+    return await checkResponse.request(url, options);
   },
 
   getArticles: async (token) => {
@@ -86,7 +75,7 @@ const MainApi = {
         authorization: `Bearer ${token}`,
       },
     };
-    return await Api.request(url, options);
+    return await checkResponse.request(url, options);
   },
 
   deleteArticle: async (artucleId, token) => {
@@ -98,7 +87,7 @@ const MainApi = {
         authorization: `Bearer ${token}`,
       },
     };
-    return await Api.request(url, options);
+    return await checkResponse.request(url, options);
   },
 };
 
