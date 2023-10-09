@@ -2,7 +2,7 @@ import { checkResponse } from "./checkResponse";
 
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://api.newsexplorer.lozan.com"
+    ? "https://www.newsexplorer.lozan.com"
     : "http://localhost:3001";
 
 const MainApi = {
