@@ -35,8 +35,6 @@ const LoginModal = ({
     }
   }, [isActive, setValues]);
 
-  console.log(values);
-
   const handleSubmit = (e) => {
     handleLogin(values);
     e.preventDefault();
