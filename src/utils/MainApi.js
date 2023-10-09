@@ -2,7 +2,7 @@ import Api from "./NewsApi";
 
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://www.newsexplorer.lozan.com"
+    ? "https://newsexplorer.lozan.com"
     : "http://localhost:3001";
 
 const MainApi = {
