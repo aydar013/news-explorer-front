@@ -1,3 +1,5 @@
+import { checkResponse } from "./checkResponse";
+
 const BASE_URL = "https://nomoreparties.co/news/v2";
 const apiKey = "66627eef648b404d9562926e00e57f23";
 
@@ -17,7 +19,7 @@ const Api = {
         Authorization: `${apiKey}`,
       },
     };
-    return await Api.request(url, options);
+    return await checkResponse.request(url, options);
   },
 };
 

@@ -123,7 +123,7 @@ const App = () => {
         if (String(e).includes("409")) {
           console.log("This email has been used already");
         } else {
-          console.log(e);
+          console.error(e);
         }
       })
       .finally(() => {
