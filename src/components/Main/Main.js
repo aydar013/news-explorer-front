@@ -2,6 +2,7 @@ import Preloader from "../Preloader/Preloader";
 import NewsCardList from "../NewsCardList/NewsCardList";
 
 const Main = ({
+  handleLoginModal,
   handleDeleteArticle,
   savedArticles,
   handleSaveArticle,
@@ -21,6 +22,7 @@ const Main = ({
           {isSearching === true && <Preloader />}
           {isLoading === false && (
             <NewsCardList
+              handleLoginModal={handleLoginModal}
               handleDeleteArticle={handleDeleteArticle}
               visible={visible}
               showMoreItems={showMoreItems}

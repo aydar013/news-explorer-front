@@ -17,14 +17,20 @@ const ModalWithForm = ({
   };
 
   useEffect(() => {
+    if (!isOpen) return;
+
     const handleEscKey = (e) => {
-      if (e.key === "Escape" && isOpen) {
+      if (e.key === "Escape") {
         onClose();
       }
     };
 
     document.addEventListener("keydown", handleEscKey);
-  });
+
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, [isOpen, onClose]);
 
   const submitButton = isValid
     ? "modal__submit-button modal__submit-button-valid"

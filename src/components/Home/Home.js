@@ -28,6 +28,7 @@ const Home = ({
         handleSavedNewsEnter={handleSavedNewsEnter}
       />
       <Main
+        handleLoginModal={handleLoginModal}
         handleDeleteArticle={handleDeleteArticle}
         isLoading={isLoading}
         isSearching={isSearching}

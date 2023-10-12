@@ -36,8 +36,8 @@ const LoginModal = ({
   }, [isActive, setValues]);
 
   const handleSubmit = (e) => {
-    handleLogin(values);
     e.preventDefault();
+    handleLogin(values);
   };
 
   return (
@@ -69,7 +69,7 @@ const LoginModal = ({
         <div className="error-message">
           <ErrorMessage
             errorMessage={"Invalid email address"}
-            className={" error-message__signin-email"}
+            className={"error-message__signin-email"}
           />
         </div>
       )}

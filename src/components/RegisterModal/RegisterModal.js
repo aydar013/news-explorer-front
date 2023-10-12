@@ -19,13 +19,16 @@ const RegisterModal = ({
       name: "",
     });
 
-  useEffect(() => {
-    if (Object.values(isInvalid).every((item) => item === false)) {
-      setIsValid(true);
-    } else {
-      setIsValid(false);
-    }
-  }, [isInvalid, setIsValid]);
+  useEffect(
+    (e) => {
+      if (Object.values(isInvalid).every((item) => item === false)) {
+        setIsValid(true);
+      } else {
+        setIsValid(false);
+      }
+    },
+    [isInvalid, setIsValid]
+  );
 
   useEffect(() => {
     if (isActive) {

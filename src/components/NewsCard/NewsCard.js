@@ -4,6 +4,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { handleDateFormat } from "../../utils/constants";
 
 const NewsCard = ({
+  handleLoginModal,
   handleDeleteArticle,
   cardInfo,
   index,
@@ -55,6 +56,10 @@ const NewsCard = ({
     handleDeleteArticle(card);
   };
 
+  const openLoginModal = () => {
+    handleLoginModal();
+  };
+
   return (
     <>
       {isHomePage ? (
@@ -84,7 +89,9 @@ const NewsCard = ({
             <button
               className={cardButtonClassName}
               onClick={
-                currentUser !== null ? handleBookmarkButtonClick : undefined
+                currentUser !== null
+                  ? handleBookmarkButtonClick
+                  : openLoginModal
               }
               onMouseEnter={
                 currentUser === null ? () => setIsHovering(index) : undefined

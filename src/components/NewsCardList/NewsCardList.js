@@ -3,6 +3,7 @@ import NothingFound from "../NothingFound/NothingFound";
 import NewsCard from "../NewsCard/NewsCard";
 
 const NewsCardList = ({
+  handleLoginModal,
   handleDeleteArticle,
   visible,
   handleSaveArticle,
@@ -28,6 +29,7 @@ const NewsCardList = ({
                   <div className="card__container">
                     {newsCards.slice(0, cardsVisible).map((card, i) => (
                       <NewsCard
+                        handleLoginModal={handleLoginModal}
                         handleDeleteArticle={handleDeleteArticle}
                         cardInfo={card}
                         index={i}

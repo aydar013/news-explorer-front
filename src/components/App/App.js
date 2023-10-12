@@ -9,7 +9,7 @@ import LoginModal from "../LoginModal/LogInModal";
 import SuccessfulModal from "../SuccessfulModal/SuccessfulModal";
 import CurrentUserContext from "../../context/CurrentUserContext";
 import MainApi from "../../utils/MainApi";
-import ProtectedRoute from "../../ProtectedRoute/ProtectedRoute";
+import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 
 const App = () => {
   const [userLoginModal, setUserLoginModal] = useState(false);
