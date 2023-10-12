@@ -3,14 +3,9 @@ import React, { useState } from "react";
 const SearchForm = ({ handleSearchArticles }) => {
   const [isQuery, setIsQuery] = useState("");
 
-  const handleButtonClick = () => {
+  const handleSearchClick = (e) => {
+    e.preventDefault();
     handleSearchArticles(`${isQuery.toLowerCase()}`);
-  };
-
-  const handleEnterKey = (e) => {
-    if (e.key === "Enter") {
-      handleButtonClick();
-    }
   };
 
   return (
@@ -22,20 +17,21 @@ const SearchForm = ({ handleSearchArticles }) => {
           account.
         </p>
       </div>
-      <label className="search-form__label">
-        <input
-          className="search-form__input"
-          type="text"
-          minLength="1"
-          placeholder="Enter topic"
-          onChange={(e) => setIsQuery(e.target.value)}
-          value={isQuery}
-          onKeyDown={handleEnterKey}
-        />
-        <button className="search-form__button" onClick={handleButtonClick}>
-          Search
-        </button>
-      </label>
+      <form onSubmit={handleSearchClick}>
+        <label className="search-form__label">
+          <input
+            className="search-form__input"
+            type="text"
+            minLength="1"
+            placeholder="Enter topic"
+            onChange={(e) => setIsQuery(e.target.value)}
+            value={isQuery}
+          />
+          <button type="submit" className="search-form__button">
+            Search
+          </button>
+        </label>
+      </form>
     </div>
   );
 };
