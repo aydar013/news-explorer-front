@@ -1,0 +1,420 @@
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 62px 104px;
+  background-color: #f5f6f7;
+}
+
+.card__link {
+  text-decoration: none;
+  color: #1a1b22;
+}
+
+.card {
+  width: 400px;
+  height: 576px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+}
+
+.card__image {
+  width: 400px;
+  height: 272px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.card__date {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b6bcbf;
+  width: 352px;
+  margin: 20px auto 12px;
+}
+
+.card__title {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 352px;
+  height: 60px;
+  color: #1a1b22;
+  margin: 0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
+}
+
+.card__description {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: 352px;
+  height: 110px;
+  margin: 16px auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  white-space: pre-wrap;
+  color: #1a1b22;
+}
+
+.card__source {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  width: 352px;
+  margin: 0 auto 24px 24px;
+  color: #b6bcbf;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  max-height: 21px;
+}
+
+.search-result {
+  background-color: #f5f6f7;
+}
+
+.search-result__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 62px;
+}
+
+.search-result__title {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  padding: 80px 0 2px 104px;
+  margin: 0;
+}
+
+.search__show-more {
+  width: 288px;
+  height: 64px;
+  margin: 2px auto 18px;
+  padding: 0;
+  border: none;
+  border-radius: 35px;
+  background: #ffffff;
+  cursor: pointer;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.search__show-more:hover {
+  background: #e8e8e8;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__bookmark-inactive {
+  background-image: url("../../images/bookmark-gray.svg");
+}
+
+.card__bookmark-inactive:hover {
+  background-image: url("../../images/bookmark-black.svg");
+}
+
+.card__bookmark-active {
+  background-image: url("../../images/bookmark-blue.svg");
+}
+
+.card__signin {
+  position: absolute;
+  top: 25px;
+  right: 70px;
+  width: 182px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.card__signin__hidden {
+  visibility: hidden;
+}
+
+.card__delete-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: #fff url(../../images/trashIcon-grey.svg) center no-repeat;
+  z-index: 1;
+  box-shadow: 1px 1px 1px #b6bcbf;
+}
+
+.card__delete-text {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  display: none;
+}
+
+.card__delete-button:hover .card__delete-text {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 159px;
+  height: 40px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0px;
+  right: 45px;
+}
+
+.card__delete-button:hover {
+  background: #fff url(../../images/trashIcon-black.svg) center no-repeat;
+  z-index: 2;
+}
+
+.card__subtitle {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 87px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1050px) {
+  .card {
+    height: 420px;
+    width: 224px;
+  }
+  .card__image {
+    height: 150px;
+    width: 224px;
+  }
+  .card__date {
+    height: 24px;
+    width: 192px;
+    margin: 16px 0 12px 18px;
+  }
+  .card__title {
+    height: 73px;
+    width: 192px;
+    margin: 12px 0 10px 16px;
+    font-size: 22px;
+    line-height: 24px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .card__subtitle {
+    top: 13px;
+    left: 13px;
+    height: 40px;
+  }
+  .card__delete-button {
+    top: 13px;
+    right: 13px;
+    height: 40px;
+  }
+  .card__description {
+    height: 88px;
+    width: 192px;
+    margin: 0 16px 12px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card__source {
+    height: 20px;
+    width: 185px;
+    margin: 0 16px 16px;
+  }
+  .card__bookmark {
+    top: 8px;
+    right: 8px;
+  }
+  .card__signin {
+    width: 149px;
+    top: 8px;
+    right: 53px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+    width: 218px;
+    height: 420px;
+  }
+  .card__container {
+    gap: 8px;
+    padding: 32px 40px;
+  }
+  .card__image {
+    width: 218px;
+    height: 150px;
+  }
+  .card__date {
+    width: 192px;
+    margin-bottom: 8px;
+  }
+  .card__title {
+    width: 192px;
+    font-size: 22px;
+    line-height: 24px;
+    height: 72px;
+    -webkit-line-clamp: 3;
+  }
+  .card__description {
+    width: 192px;
+    height: 88px;
+    -webkit-line-clamp: 4;
+    margin: 10px auto;
+  }
+  .card__source {
+    width: 192px;
+    margin-bottom: 16px;
+  }
+  .card__delete-button {
+    top: 8px;
+    right: 8px;
+  }
+  .card__subtitle {
+    width: 83px;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card__container {
+    margin: 24px 0 13px;
+  }
+  .card {
+    width: 288px;
+    height: 440px;
+  }
+  .card__image {
+    width: 288px;
+    height: 196px;
+  }
+  .card__date {
+    width: 256px;
+    margin: 13px 16px 10px;
+  }
+  .card__title {
+    width: 256px;
+    font-size: 22px;
+    line-height: 24px;
+    height: 48px;
+    -webkit-line-clamp: 2;
+    margin-top: 0;
+  }
+  .card__description {
+    width: 256px;
+    height: 88px;
+    -webkit-line-clamp: 4;
+    margin: 14px 16px 8px;
+  }
+  .card__source {
+    width: 256px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+
+  .search-result__title {
+    display: none;
+  }
+  .card__signin {
+    width: 149px;
+    top: 8px;
+    right: 53px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .card__delete-button {
+    top: 16px;
+    right: 16px;
+  }
+  .card__delete-button:hover .card__delete-text {
+    top: 45px;
+    right: 0;
+  }
+  .card__subtitle {
+    width: 83px;
+    top: 16px;
+    left: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card__description {
+    -webkit-line-clamp: 4;
+    margin: 0 16px;
+  }
+}

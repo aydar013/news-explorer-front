@@ -1,0 +1,43 @@
+.preloader {
+    margin: 0;
+	height: 282px;
+	background-color: #F5F6F7;
+	overflow: hidden;
+    position: relative;
+}
+
+.preloader__animation {
+    display: block;
+	width: 50px;
+	height: 50px;
+    border: 1px solid rgb(26,27,34,.5);
+    border-bottom-color: #D1D2D6;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	animation: spin .75s infinite linear;
+}
+
+.preloader__text {
+    color: #B6BCBF;
+text-align: center;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+margin: 0;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 70px;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

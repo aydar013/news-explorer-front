@@ -1,0 +1,37 @@
+@import url("./components/About/About.css");
+@import url("./components/App/App.css");
+@import url("./components/Footer/Footer.css");
+@import url("./components/Header/Header.css");
+@import url("./components/Menu/Menu.css");
+@import url("./components/ModalWithForm/ModalWithForm.css");
+@import url("./components/NavBar/NavBar.css");
+@import url("./components/NewsCardList/NewsCardList.css");
+@import url("./components/NothingFound/NothingFound.css");
+@import url("./components/Preloader/Preloader.css");
+@import url("./components/SearchForm/SearchForm.css");
+@import url("./components/SuccessfulModal/SuccessfulModal.css");
+@import url("./components/ErrorMessage/ErrorMessage.css");
+
+@import url("./vendor/fonts/font.css");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Roboto Slab", "Inter", "Source Sans Pro", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.page {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}

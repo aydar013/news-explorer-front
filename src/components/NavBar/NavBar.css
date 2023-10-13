@@ -1,0 +1,343 @@
+.navbar-nli {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  max-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 104px;
+}
+
+.navbar-nli__logo {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+}
+.navbar-li__logo {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+}
+
+.navbar-nli__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nli__toggle-button {
+  display: none;
+}
+
+.navbar-li__toggle-button {
+  display: none;
+}
+
+.navbar-nli__home-button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+  padding: 0;
+  margin-right: 34px;
+  cursor: pointer;
+  width: 68px;
+}
+
+.navbar-nli__signin-button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  width: 176px;
+  height: 48px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navbar-li {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  max-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 104px;
+}
+
+.navbar-li__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-li__home {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+  padding: 0;
+  margin-right: 66px;
+  cursor: pointer;
+  width: 68px;
+}
+
+.navbar-li__saved-articles {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 116px;
+  padding: 0;
+  background: none;
+  margin-right: 64px;
+  border: none;
+  color: #b6bcbf;
+  cursor: pointer;
+  height: 24px;
+  align-self: center;
+}
+
+.navbar-li__signout {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 112px;
+  background-color: transparent;
+  height: 48px;
+  border-radius: 100px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 15px 12px 19px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-li__signout:hover {
+  border: 1px solid #b6bcbf;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-li__name {
+  text-transform: capitalize;
+}
+
+.navbar-articles {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1a1b22;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 104px;
+}
+
+.navbar-articles__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-articles__logo {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1a1b22;
+}
+
+.navbar-articles__button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1a1b22;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 44px;
+  cursor: pointer;
+}
+
+.navbar-articles__signout {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 112px;
+  color: #1a1b22;
+  height: 48px;
+  border-radius: 100px;
+  border: 1px solid var(--simulator-gray-divider, #d1d2d6);
+  background-color: transparent;
+  padding: 12px 15px 12px 19px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.navbar-articles__signout:hover {
+  border: 1px solid #1a1b22;
+  transition: 0.5s ease-in-out;
+}
+
+#saved-articles__button {
+  border-bottom: 3px solid #1a1b22;
+  padding: 0 32px;
+  margin-right: 32px;
+}
+
+.navbar-articles__signout-icon {
+  height: 24px;
+  width: 24px;
+}
+.navbar-articles__toggle-button {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar-nli {
+    margin: 0 40px;
+    height: 65px;
+  }
+  .navbar-nli__home-button {
+    font-size: 16px;
+    width: 60px;
+    margin-right: 19px;
+    height: 66px;
+  }
+  .navbar-nli__signin-button {
+    font-size: 16px;
+    width: 152px;
+    height: 40px;
+  }
+  .navbar-li {
+    margin: 0 40px 0;
+    height: 65px;
+  }
+  .navbar-li__home {
+    font-size: 16px;
+    width: 60px;
+    margin-right: 8px;
+    height: 66px;
+  }
+  .navbar-li__saved-articles {
+    font-size: 16px;
+    width: 160px;
+    margin-right: 16px;
+  }
+  .navbar-li__name {
+    font-size: 16px;
+  }
+  .navbar-articles__button {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+  .navbar-articles {
+    margin: 0 40px;
+    max-height: 66px;
+  }
+  #saved-articles__button {
+    padding: 0 29.5px;
+    height: 66px;
+    margin-right: 16px;
+  }
+  .navbar-articles__signout {
+    min-width: 100px;
+    height: 40px;
+    font-size: 16px;
+    gap: 13px;
+    padding: 8px 13px 8px 15px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .navbar-nli__logo {
+    font-size: 16px;
+  }
+  .navbar-li__logo {
+    font-size: 16px;
+  }
+  .navbar-nli {
+    margin: 0 16px;
+  }
+  .navbar-li {
+    margin: 0 16px;
+    height: 56px;
+  }
+  .navbar-nli__home-button {
+    display: none;
+  }
+  .navbar-nli__signin-button {
+    display: none;
+  }
+  .navbar-nli__toggle-button {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar-li__toggle-button {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar-li__home {
+    display: none;
+  }
+  .navbar-li__saved-articles {
+    display: none;
+  }
+  .navbar-li__signout {
+    display: none;
+  }
+  .navbar-articles__logo {
+    font-size: 16px;
+  }
+  .navbar-articles {
+    margin: 0 16px;
+    height: 56px;
+  }
+
+  #saved-articles__button {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-articles__button {
+    display: none;
+  }
+  .navbar-articles__signout {
+    display: none;
+  }
+  .navbar-articles__toggle-button {
+    display: block;
+    cursor: pointer;
+  }
+}

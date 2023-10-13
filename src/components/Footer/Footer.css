@@ -1,0 +1,117 @@
+.footer {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #b6bcbf;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 106px 0 106px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+.footer__home-button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  margin-right: 40px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footer__home-button:visited {
+  color: #1a1b22;
+}
+
+.footer__tripleten-button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  margin-right: 40px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footer__tripleten-button:visited {
+  color: #1a1b22;
+}
+
+.footer__github-button {
+  cursor: pointer;
+  margin-right: 26px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__facebook-button {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__links {
+  display: flex;
+}
+
+@media screen and (max-width: 1327px) {
+  .footer {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 0 40px;
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    flex-direction: column-reverse;
+    height: 176px;
+  }
+  .footer__links-home {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 74px;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .footer__links-social {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  .footer__links {
+    align-items: space-between;
+  }
+  .footer__facebook-button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer__github-button {
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+  }
+  .footer__copyright {
+    width: 288px;
+    margin: 38px 0 22px;
+  }
+}
